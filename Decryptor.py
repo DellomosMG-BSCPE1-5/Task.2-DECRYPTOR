@@ -16,6 +16,9 @@ print(
 )
 
 #Ask the user for the encrypted text he/she wants to decrypt
+print(Fore.MAGENTA + Style.NORMAL + "Kindly enter the encrypted text that you want to decrypt: ", end = "")
+user_input = input(Fore.WHITE + "")
+
 #Decrypt the text by replacing/changing the following characters with their corresponding alphabet
 #Processing the Output/Loading
 #Display the decrypted text to the user
