@@ -27,8 +27,19 @@ for letter in user_input:
         decrypted_txt += chars_substitute[letter]
     else:
         decrypted_txt += letter
-print(decrypted_txt)
 
 #Processing the Output/Loading
+from rich.console import Console
+from rich.progress import track
+from time import sleep
+print("\n")
+def process_data():
+    sleep(0.02)
+for _ in track(range(100), description='[yellow]Processing data'):
+    process_data()
+
+
+
+
 #Display the decrypted text to the user
 #Ask the user if he/she wants to try again the program.
