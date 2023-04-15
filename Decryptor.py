@@ -20,6 +20,15 @@ print(Fore.MAGENTA + Style.NORMAL + "Kindly enter the encrypted text that you wa
 user_input = input(Fore.WHITE + "")
 
 #Decrypt the text by replacing/changing the following characters with their corresponding alphabet
+chars_substitute = {"*": "a", "&": "e", "#": "i", "+": "o", "!":"u"}
+decrypted_txt = ""
+for letter in user_input:
+    if letter in chars_substitute:
+        decrypted_txt += chars_substitute[letter]
+    else:
+        decrypted_txt += letter
+print(decrypted_txt)
+
 #Processing the Output/Loading
 #Display the decrypted text to the user
 #Ask the user if he/she wants to try again the program.
