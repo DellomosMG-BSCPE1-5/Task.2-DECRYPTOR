@@ -38,8 +38,11 @@ def process_data():
 for _ in track(range(100), description='[yellow]Processing data'):
     process_data()
 
-
-
-
 #Display the decrypted text to the user
+print("\n")
+print(Fore.MAGENTA + "=" * 105)
+console = Console()
+console.print("[bold magenta]Here is the decrypted format of your input[/bold magenta]:", decrypted_txt)
+print(Fore.MAGENTA + "=" * 105)
+
 #Ask the user if he/she wants to try again the program.
